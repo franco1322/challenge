@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/logo1.png" />
+    <title>Encryptatron</title>
+  </head>
+  <body>
+    <main>
+      <header class="header-logo">
+        <span class="logo">
+          <img
+            class="logo-img"
+            src="img/logo.png"
+            alt="Logo de Cripter"
+          />
+          <h1>Encryptatron</h1>
+        </span>
+      </header>
+      <section>
+        <article class="card card-message">
+          <header>
+            <div>
+              <h2>Mensaje</h2>
+              <span class="alert-message">
+                <img src="img/alert.svg" alt="Icono de Alerta" />
+                <h6>Puede incluir cualquier tipo <br />de texto incluso mayúsculas y acentos</h6>
+              </span>
+            </div>
+            <div>
+            <button onclick="encriptar()" title="Encriptar texto">Encriptar</button>
+          </div>
+            <button id="button-trash" onclick="borrar()" title="borrar todo">
+              <img src="img/eliminar.png" alt="icono de basura" />
+            </button>
+          </header>
+          <textarea
+            name="message"
+            id="text-message"
+            placeholder="Escriba su mensage aquí"
+          ></textarea>
+          <footer>
+            <div>
+              <button onclick="desencriptar()" title="Desencriptar texto">Desencriptar</button>
+            </div>
+          </footer>
+        </article>
+        <article class="card card-crypted-message">
+          <header id="header-left">
+          
+            <button id="button-copy" title="Copiar texto" onclick="copiar()" alt="copiar texto encriptado">
+              <img
+                src="img/copy.png"
+                alt="Icono de copiar"
+              />
+            </button>
+          </header>
+          <textarea name="crypted-message" id="text-crypted" disabled>
+          </textarea>
+          <picture class="empty-alert">
+            <img
+              src="img/no encotrado.png"
+              alt="Imagen de personaje viendo un diamante"
+            />
+            <h5>
+              no se detecta ningun<br />
+              Mensaje
+            </h5>
+          </picture>
+        </article>
+      </section>
+      <footer>
+        <div class="final">
+          <p>&copy; 2023 - Todos los derechos reservados</p><br />
+          <p title="Perfil Linkedin"><a href="https://www.linkedin.com/in/nelson-franco-b0b4004a/">Nelson Franco</a></p>
+        </div>
+      </footer>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
+S

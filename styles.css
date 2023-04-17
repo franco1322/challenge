@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-image: url("img/fondo.jpg");
+  background-size: cover;
+  margin-top: 24px;
+  width: auto;
+}
+
+
+
+main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100px 1fr 100px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #fa07a9, #05f7cf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 15px 32px;
+  text-align: center;
+  cursor: pointer;
+  margin: 4px 2px;
+  border-radius: 10%;
+  
+}
+
+button > img {
+  width: 1.75rem;
+}
+
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #00a884;
+  line-height: 1.5;
+  margin-top: 24px;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #00a884;
+ 
+}
+
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #FFFFFF;
+}
+
+.logo {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 24px;
+}
+
+.logo-img {
+  margin-top: 24px;
+  width: 20rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  margin: auto 0;
+}
+
+.card-message {
+  background: #333440;
+}
+
+.card {
+  display: grid;
+  flex-basis: auto;
+  grid-template-rows: 5rem minmax(14rem, auto);
+  border-radius: 50px;
+  box-shadow: 0 24px 32px -8px #585353
+}
+
+.card > header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  border-bottom: 1px solid #e9ecf8;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.card > footer {
+  display: flex;
+  justify-content: flex-end;
+   padding-right: 150px;
+}
+
+#header-left {
+  display: flex;
+  justify-content: flex-end;
+   padding-right: 24px;
+}
+
+
+.card-crypted-message {
+  position: relative;
+  background: #343541;
+  border: 2px dashed #0a3871;
+  border-radius: 50px;
+  box-shadow: 0 24px 32px -8px #585353;
+  place-items: center;
+}
+
+
+.alert-message {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: white
+}
+
+
+.card > textarea {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  resize: none;
+  
+  border: none;
+  background: none;
+}
+
+.card-message > textarea {
+  color: white;
+}
+
+.card-crypted-message > textarea {
+  color: white;
+}
+
+.card-message > textarea:placeholder-shown {
+  color:  #c7ccea;
+  font-weight: 300;
+}
+
+
+
+select {
+  position: relative;
+  appearance: none;
+  border-radius: 8px;
+  padding: 8px 40px 8px
+    16px;
+  background: #0a3871;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  background-repeat: no-repeat;
+  background-position: right 8px top 50%;
+}
+
+
+#button-trash {
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+#button-copy {
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+
+.empty-alert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 2rem;
+}
+
+.empty-alert > img {
+  height: 8rem;
+}
+
+.empty-alert > h5 {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  color: #00a884;
+}
+
+.final {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;;
+}
+
+/*ANIMATIONS*/
+button:hover,
+button:focus {
+  background:  white;
+
+  -webkit-text-fill-color:  #00a884;
+
+}
+
+button:active {
+  transition: 1s;
+  animation: scale-up-center 0.2s;
+}
+
+select:hover,
+select:focus {
+  opacity: 0.9;
+}
+
