@@ -268,3 +268,57 @@ select:focus {
   opacity: 0.9;
 }
 
+/*BREAK POINT*/
+@media (min-width: 1439px) {
+  html {
+    font-size: 32px;
+  }
+
+  main {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  section {
+    grid-column-gap: 32px;
+    margin: auto 0;
+  }
+
+  .card {
+    grid-template-rows: 5rem minmax(20rem, auto);
+  }
+}
+
+@media (max-width: 1023px) {
+  html {
+    font-size: 13px;
+  }
+
+  main {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  section {
+    grid-column-gap: 0;
+    margin: auto 0;
+  }
+
+  .card {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
