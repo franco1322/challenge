@@ -151,8 +151,10 @@ section {
 
 
 .alert-message {
-  margin-top: 24px;
-  width: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: white
 }
 
 #alert-img {
@@ -271,7 +273,6 @@ select:hover,
 select:focus {
   opacity: 0.9;
 }
-
 /*BREAK POINT*/
 @media (min-width: 1439px) {
   html {
@@ -280,7 +281,7 @@ select:focus {
 
   main {
     margin-left: 64px;
-    margin-right: 64px;
+    margin-right: 64px);
   }
 
   section {
