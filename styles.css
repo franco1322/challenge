@@ -151,10 +151,14 @@ section {
 
 
 .alert-message {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  color: white
+  margin-top: 24px;
+  width: 5rem;
+}
+
+#alert-img {
+  margin-top: 1px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 
